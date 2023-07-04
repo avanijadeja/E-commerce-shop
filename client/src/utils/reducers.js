@@ -10,6 +10,7 @@ import {
   TOGGLE_CART,
 } from "./actions";
 
+//  added initalState for all variables with inital values
 const initialState = {
   products: [],
   cart: [],
