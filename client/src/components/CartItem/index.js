@@ -1,10 +1,13 @@
 import React from "react";
+// import react-redux
 import { useDispatch, useSelector } from "react-redux";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 
 const CartItem = ({ item }) => {
+  // create dispatch object from useDispatch()
   const dispatch = useDispatch();
+  // create state object from useSelector()
   const state = useSelector((s) => s);
 
   const removeFromCart = (item) => {
